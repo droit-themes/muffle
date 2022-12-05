@@ -105,7 +105,7 @@ pre {
  */
 a {
 	background-color: transparent;
-	color: #FF2A39;
+	color: #F8B326;
 }
 
 /**
@@ -956,11 +956,11 @@ h1.page_title.banne-blog {
 }
 
 .dl_product_compaire .twentytwenty-handle:before {
-  background: #FF2A39 !important;	
+  background: #F8B326 !important;	
 }
 
 .dl_product_compaire .twentytwenty-handle:after {
-  background: #FF2A39 !important;	
+  background: #F8B326 !important;	
 }
 
 .dl_product_compaire .twentytwenty-handle {
@@ -970,7 +970,7 @@ h1.page_title.banne-blog {
     margin-left: 0;
     margin-top: 0;
     transform: translate(-50%, -50%);
-    border: 5px solid #FF2A39;
+    border: 5px solid #F8B326;
     box-shadow: none;
 }
 
