@@ -197,9 +197,10 @@ function muffle_is_comment_by_post_author( $comment = null ) {
            
 			$logo_option_url = MUFFLE_IMAGES.'/default_logo/logo.svg';
 			$sticky_logo_option = MUFFLE_IMAGES.'/default_logo/logo.svg';
-			$sticky_ratina_sticky_url = MUFFLE_IMAGES.'/default_logo/logo.svg';
+			$sticky_ratina_sticky_url = MUFFLE_IMAGES.'/default_logo/logo_ratina.png';
 			$sticky_ratina_attr = '';
-			$ratena_url = MUFFLE_IMAGES.'/default_logo/logo.svg';
+			$ratena_url = MUFFLE_IMAGES.'/default_logo/logo_ratina.png';
+			
 			$ratena_attr = '';
 			$logo_alt = 'muffle default logo';
 			$logo_alt_sticky = 'muffle default sticky logo';
