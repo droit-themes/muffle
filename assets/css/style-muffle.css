@@ -175,7 +175,7 @@ ul.dl_tab_menu.droit-advance-navs {
     padding: 0px 31px 0px 0px !important;
 }
 .carspa_contact_text-color a {
-    color: #626472;
+    color: #0F0F0F;
 }
 
 
@@ -354,7 +354,7 @@ ul.dl_tab_menu.droit-advance-navs {
 	}
 
 	a {
-		color: #626472;
+		color: #0F0F0F;
 	}
 
 	#cancel-comment-reply-link {
@@ -530,7 +530,7 @@ ul.dl_tab_menu.droit-advance-navs {
 }
 .pricing_contact_form .dl_contact_form_wrapper.dl_cf7_form_02 .wpcf7-form-control{
 	border-bottom: 1px solid #bdbaba;
-	font-family: "Inter", sans-serif;
+	font-family: Outfit;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -755,4 +755,32 @@ span.post_date_loop{
 }
 .page .entry-content{
 	padding: 50px 0 50px 0;
+}
+a.post-page-numbers{
+	width: 44px;
+    height: 44px;
+    line-height: 42px;
+    border: 1px solid #e7e7f6;
+    background: #fbfbfd;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    color: #7b8a9e;
+    border-radius: 5%;
+    text-decoration: none;
+    margin-right: 5px;
+}
+span.post-page-numbers.current{
+	background: #F8B326;
+    border-color: #F8B326;
+    color: #fff;
+	width: 44px;
+    height: 44px;
+    line-height: 42px;    
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5%;
+    text-decoration: none;
+    margin-right: 5px;
 }

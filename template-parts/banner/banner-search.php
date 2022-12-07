@@ -2,7 +2,7 @@
   
 $banner_url = muffle_options('muffle_search_banner_upload');
 
-$banner_background_url = MUFFLE_IMAGES.'/blog/banner/blog_details_img.jpg';
+$banner_background_url = MUFFLE_IMAGES.'/blog/banner/banner.png';
 
 if($banner_url && !empty($banner_url['url'])) {
     $banner_background_url = $banner_url['url'];

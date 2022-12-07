@@ -47,9 +47,9 @@ function muffle_resister_required_plugin() {
 			'slug'               => 'droit-elementor-addons',
 			'required'           => true,
 		),
-
+		
 		array(
-			'name'               => esc_html__( 'muffle Core', 'muffle' ), // The plugin name.
+			'name'               => esc_html__( 'Muffle Core', 'muffle' ), // The plugin name.
 			'slug'               => 'muffle-core', // The plugin slug (typically the folder name).
 			'source'             => 'http://muffle.droitlab.com/downloadfile/muffle-core.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
@@ -58,11 +58,13 @@ function muffle_resister_required_plugin() {
 			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
 		),
+
 		array(
 			'name'               => esc_html__( 'Redux Framework', 'muffle' ),
 			'slug'               => 'redux-framework',
 			'required'           => true,
 		),
+
 		array(
 			'name'               => esc_html__( 'Advanced Custom Fields', 'muffle' ),
 			'slug'               => 'advanced-custom-fields',

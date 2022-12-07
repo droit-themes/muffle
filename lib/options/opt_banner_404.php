@@ -48,7 +48,7 @@ Redux::set_section('muffle', array(
             'url'      => true,
             'title'    => __('Upload Banner', 'muffle'),
             'default'  => array(
-                'url'=> MUFFLE_IMAGES.'/blog/banner/blog_details_img.jpg',
+                'url'=> MUFFLE_IMAGES.'/blog/banner/banner.png',
             ),
             'url'      => false
 

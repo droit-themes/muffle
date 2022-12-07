@@ -10,8 +10,7 @@ function muffle_fonts_url() {
 
     /* Body font */
     if ( 'off' !== 'on' ) {
-        $fonts[] = "Inter:200,300,400,500,600,700,800,900";
-        $fonts[] = "Roboto:200,300,400,500,600,700,800,900";
+        $fonts[] = "Outfit:200,300,400,500,600,700,800,900";
     }
 
     $is_ssl = is_ssl() ? 'https' : 'http';

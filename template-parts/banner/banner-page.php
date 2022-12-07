@@ -11,7 +11,7 @@ $banner_url_page= muffle_page_meta('banner_background_image', get_the_ID());
 $how_title = muffle_options('muffle_page_banner_title', 'show');
 $show_breadcrumbs = muffle_options('muffle_page_banner_breadcrumb', 'show');
 
-$banner_background_url = MUFFLE_IMAGES.'/blog/banner/blog_details_img.jpg';
+$banner_background_url = MUFFLE_IMAGES.'/blog/banner/banner.png';
 
 if($banner_url_page && $banner_url_page != ''){
     $banner_background_url = $banner_url_page;

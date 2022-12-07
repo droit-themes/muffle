@@ -10,7 +10,7 @@
   $how_title = muffle_options('muffle_blog_banner_title', 'show');
   $title = muffle_options('muffle_blog_title', get_bloginfo('name'));
   $show_breadcrumbs = muffle_options('muffle_blog_banner_breadcrumb', 'show');
-  $banner_background_url = MUFFLE_IMAGES.'/blog/banner/blog_details_img.jpg';
+  $banner_background_url = MUFFLE_IMAGES.'/blog/banner/banner.png';
  
   
  if($banner_url && !empty($banner_url['url'])) {

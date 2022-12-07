@@ -6,7 +6,7 @@ $banner_url = muffle_options('muffle_archive_banner_upload');
 
 $how_title = muffle_options('muffle_arcive_title', 'show');
 $show_breadcrumbs = muffle_options('muffle_archive_banner_breadcrumb', 'show');
-$banner_background_url = MUFFLE_IMAGES.'/blog/banner/blog_details_img.jpg';
+$banner_background_url = MUFFLE_IMAGES.'/blog/banner/banner.png';
 
 if($banner_url && !empty($banner_url['url'])) {
     $banner_background_url = $banner_url['url'];

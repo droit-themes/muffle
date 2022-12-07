@@ -1,6 +1,6 @@
 
 <?php 
-    $banner_background_url = MUFFLE_IMAGES.'/blog/banner/blog_details_img.jpg';
+    $banner_background_url = MUFFLE_IMAGES.'/blog/banner/banner.png';
 ?>
 <div class="blog_breadcrumbs_area_two" data-bg-img="<?php echo esc_url($banner_background_url); ?>">
 <div class="overlay_bg"></div>
