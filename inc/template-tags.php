@@ -195,7 +195,7 @@ function muffle_is_comment_by_post_author( $comment = null ) {
 
 		function muffle_logo () {
            
-			$logo_option_url = MUFFLE_IMAGES.'/default_logo/logo.svg';
+			$logo_option_url = MUFFLE_IMAGES.'/default_logo/logo_main.svg';
 			$sticky_logo_option = MUFFLE_IMAGES.'/default_logo/logo.svg';
 			$sticky_ratina_sticky_url = MUFFLE_IMAGES.'/default_logo/logo_ratina.png';
 			$sticky_ratina_attr = '';

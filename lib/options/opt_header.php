@@ -70,22 +70,216 @@ Redux::set_section( 'muffle', array(
     )
 ) );
 
+/**
+ * Menu Settings
+ */
 Redux::set_section( 'muffle', array(
-    'title'            => esc_html__( 'Menu Setting', 'muffle' ),
-    'id'               => 'muffle_menu_setting',
+    'title'            => esc_html__( 'Header Styling', 'muffle' ),
+    'id'               => 'header_styling_opt',
     'icon'             => '',
     'subsection'       => true,
     'fields'           => array(
-         array(
-            'id'       => 'muffle_searchicon_toggle',
-            'type'     => 'button_set',
-            'title'    => esc_html__('Show Search Icon', 'muffle'),
-            'options' => array(
-                'yes' => esc_html__('Yes', 'muffle'), 
-                'no' => esc_html__('No', 'muffle'), 
-             ), 
-            'default' => 'yes'
-        )
+            array(
+                'id'       => 'is_menu_btn',
+                'type'     => 'button_set',
+                'title'    => esc_html__('Show Search Button', 'muffle'),
+                'options' => array(
+                    'yes' => esc_html__('Yes', 'muffle'), 
+                    'no' => esc_html__('No', 'muffle'), 
+                 ), 
+                'default' => 'no'
+            ),
+
+            array(
+                'title'     => esc_html__( 'Button label', 'muffle' ),
+                'subtitle'  => esc_html__( 'Leave the button label field empty to hide the menu action button.', 'muffle' ),
+                'id'        => 'menu_btn_label',
+                'type'      => 'text',
+                'default'   => esc_html__( 'Get Started', 'muffle' ),
+                'required'  => array( 'is_menu_btn', '=', 'yes' )
+            ),
+    
+            array(
+                'title'     => esc_html__( 'Button URL', 'muffle' ),
+                'id'        => 'menu_btn_url',
+                'type'      => 'text',
+                'default'   => '#',
+                'required'  => array( 'is_menu_btn', '=', 'yes' )
+            ),
+            array(
+                'title'     => esc_html__( 'Button Target', 'muffle' ),
+                'id'        => 'is_target_blank',
+                'type'      => 'switch',
+                'on'        => esc_html__( 'On', 'muffle' ),
+                'off'       => esc_html__( 'Off', 'muffle' ),
+                'required'  => array( 'is_menu_btn', '=', 'yes' )
+            ),
+            array(
+                'id'          => 'header_action_btn_typo',
+                'type'        => 'typography',
+                'title'       => __('Typography', 'muffle'),
+                'google'      => true,
+                'font-backup' => true,
+                'color'       => false,
+                'output'      => array('.btn_get'),
+                'units'       => 'px',
+                'required'  => array( 'is_menu_btn', '=', 'yes' )
+            ),
+            array(
+                'title'     => esc_html__( 'Button Font Size', 'muffle' ),
+                'id'        => 'menu_btn_size',
+                'type'      => 'spinner',
+                'default'   => '14',
+                'min'       => '12',
+                'step'      => 'yes',
+                'max'       => '50',
+                'output'      => array('.btn_get'),
+                'required'  => array( 'is_menu_btn', '=', 'yes' )
+            ),
+    
+            /**
+             * Button colors
+             * Style will apply on the Non sticky mode and sticky mode of the header
+             */
+            array(
+                'title'     => esc_html__( 'Button Colors', 'muffle' ),
+                'subtitle'  => esc_html__( 'Button style attributes on normal (non sticky) mode.', 'muffle' ),
+                'id'        => 'button_colors',
+                'type'      => 'section',
+                'indent'    => true,
+                'required'  => array( 'is_menu_btn', '=', 'yes' ),
+            ),
+    
+            array(
+                'title'     => esc_html__( 'Font color', 'muffle' ),
+                'id'        => 'menu_btn_font_color',
+                'type'      => 'color',
+                'output'    => array( '.btn_get' ),
+            ),
+            
+            array(
+                'title'     => esc_html__( 'Border Color', 'muffle' ),
+                'id'        => 'menu_btn_border_color',
+                'type'      => 'color',
+                'mode'      => 'border-color',
+                'output'    => array( '.btn_get' ),
+            ),
+            
+            array(
+                'title'     => esc_html__( 'Background Color', 'muffle' ),
+                'id'        => 'menu_btn_bg_color',
+                'type'      => 'color',
+                'mode'      => 'background',
+                'output'    => array( '.header_area .navbar .btn_get' ),
+            ),
+    
+            // Button color on hover stats
+            array(
+                'title'     => esc_html__( 'Hover Font Color', 'muffle' ),
+                'subtitle'  => esc_html__( 'Font color on hover stats.', 'muffle' ),
+                'id'        => 'menu_btn_hover_font_color',
+                'type'      => 'color',
+                'output'    => array( '.header_area .navbar .btn_get:hover' ),
+            ),
+            array(
+                'title'     => esc_html__( 'Hover Border Color', 'muffle' ),
+                'id'        => 'menu_btn_hover_border_color',
+                'type'      => 'color',
+                'mode'      => 'border-color',
+                'output'    => array( '.header_area .navbar .btn_get:hover' ),
+            ),
+            array(
+                'title'     => esc_html__( 'Hover background color', 'muffle' ),
+                'subtitle'  => esc_html__( 'Background color on hover stats.', 'muffle' ),
+                'id'        => 'menu_btn_hover_bg_color',
+                'type'      => 'color',
+                'output'    => array(
+                    'background' => '.header_area .navbar .btn_get:hover',
+                    'border-color' => '.navbar_fixed .header_area .navbar .btn_get:hover'
+                ),
+            ),
+            array(
+                'id'     => 'button_colors-end',
+                'type'   => 'section',
+                'indent' => false,
+            ),
+    
+            /*
+             * Button colors on sticky mode
+             */
+            array(
+                'title'     => esc_html__( 'Sticky Button Style', 'muffle' ),
+                'subtitle'  => esc_html__( 'Button colors on sticky mode.', 'muffle' ),
+                'id'        => 'button_colors_sticky',
+                'type'      => 'section',
+                'indent'    => true,
+                'required'  => array( 'is_menu_btn', '=', 'yes' ),
+            ),
+            array(
+                'title'     => esc_html__( 'Border color', 'muffle' ),
+                'id'        => 'menu_btn_border_color_sticky',
+                'type'      => 'color',
+                'mode'      => 'border-color',
+                'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+            ),
+            array(
+                'title'     => esc_html__( 'Font color', 'muffle' ),
+                'id'        => 'menu_btn_font_color_sticky',
+                'type'      => 'color',
+                'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+            ),
+            array(
+                'title'     => esc_html__( 'Background color', 'muffle' ),
+                'id'        => 'menu_btn_bg_color_sticky',
+                'type'      => 'color',
+                'mode'      => 'background',
+                'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+            ),
+    
+            // Button color on hover stats
+            array(
+                'title'     => esc_html__( 'Hover font color', 'muffle' ),
+                'subtitle'  => esc_html__( 'Font color on hover stats.', 'muffle' ),
+                'id'        => 'menu_btn_hover_font_color_sticky',
+                'type'      => 'color',
+                'output'    => array( '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover' ),
+            ),
+            array(
+                'title'     => esc_html__( 'Hover background color', 'muffle' ),
+                'subtitle'  => esc_html__( 'Background color on hover stats.', 'muffle' ),
+                'id'        => 'menu_btn_hover_bg_color_sticky',
+                'type'      => 'color',
+                'output'    => array(
+                    'background' => '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover',
+                ),
+            ),
+            array(
+                'title'     => esc_html__( 'Hover border color', 'muffle' ),
+                'subtitle'  => esc_html__( 'Background color on hover stats.', 'muffle' ),
+                'id'        => 'menu_btn_hover_border_color_sticky',
+                'type'      => 'color',
+                'output'    => array(
+                    'border-color' => '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover',
+                ),
+            ),
+    
+            array(
+                'id'     => 'button_colors-sticky-end',
+                'type'   => 'section',
+                'indent' => false,
+            ),
+    
+            array(
+                'title'     => esc_html__( 'Button padding', 'muffle' ),
+                'subtitle'  => esc_html__( 'Padding around the menu action button.', 'muffle' ),
+                'id'        => 'menu_btn_padding',
+                'type'      => 'spacing',
+                'output'    => array( '.btn_get' ),
+                'mode'      => 'padding',
+                'units'     => array( 'em', 'px', '%' ),      // You can specify a unit value. Possible: px, em, %
+                'units_extended' => 'true',
+                'required'  => array( 'is_menu_btn', '=', 'yes' )
+            ),
 
     )
 ));

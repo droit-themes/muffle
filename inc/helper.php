@@ -43,9 +43,9 @@ if(!function_exists('muffle_get_image')){
 /**
  * muffle kses
  */
-if(!function_exists('muffle_setup')){
+if(!function_exists('muffle_kses')){
 
-    function muffle_setup ( $data ) {
+    function muffle_kses ( $data ) {
 
         $allowed_tags = array(
             'a'								 => array(
