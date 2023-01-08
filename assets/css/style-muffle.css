@@ -506,17 +506,16 @@ ul.dl_tab_menu.droit-advance-navs {
   content: "";
   position: relative;
   left: 0px;
-  top: 1px;
+  top: -3px;
   width: 22px;
   height: 21px;
-  background: url(https://preview.droitthemes.net/wp/carspa/wp-content/uploads/2022/01/Vector-2.png)
+  background: url(https://muffle.droitlab.com/wp-content/uploads/2023/01/ArrowLeft.svg)
     no-repeat;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 .button_style_subscribe .dl_pro_subscribe_form .dl_form_control {
-  background-color: #002260;
   border: none;
 }
 .pricing_contact_form .fullname {
@@ -840,6 +839,16 @@ span.post-page-numbers.current {
   width: 100%;
 }
 /* new css */
+.menu > .nav-item {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media (max-width: 1201px) {
+  .menu > .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 @media (max-width: 768px) {
   .site .site-header .navbar .container {
     justify-content: space-between;
