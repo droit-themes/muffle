@@ -21,7 +21,7 @@ Redux::set_section( 'muffle', array(
             'id'        => 'muffle_logo',
             'type'      => 'media',
             'default'   => array(
-                'url'   => MUFFLE_IMAGES.'/default_logo/logo.svg'
+                'url'   => MUFFLE_IMAGES.'/default_logo/logo_main.svg'
             )
         ),
 
@@ -30,7 +30,7 @@ Redux::set_section( 'muffle', array(
             'id'        => 'muffle_sticky_logo',
             'type'      => 'media',
             'default'   => array(
-                'url'   => MUFFLE_IMAGES.'/default_logo/logo_sticky.svg'
+                'url'   => MUFFLE_IMAGES.'/default_logo/logo.svg'
             )
         ),
 
@@ -39,6 +39,10 @@ Redux::set_section( 'muffle', array(
             'subtitle'  => esc_html__( 'The retina logo should be double (2x) of your original logo', 'muffle' ),
             'id'        => 'muffle_retina_logo',
             'type'      => 'media',
+            'default'   => array(
+                'url'   => MUFFLE_IMAGES.'/default_logo/retina_white_logo.png'
+            )
+            
         ),
 
         array(
@@ -46,6 +50,9 @@ Redux::set_section( 'muffle', array(
             'subtitle'  => esc_html__( 'The retina logo should be double (2x) of your original logo', 'muffle' ),
             'id'        => 'muffle_retina_sticky_logo',
             'type'      => 'media',
+            'default'   => array(
+                'url'   => MUFFLE_IMAGES.'/default_logo/retina_dark_logo.png'
+            )
         ),
 
         array(

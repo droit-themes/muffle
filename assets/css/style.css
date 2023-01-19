@@ -7485,6 +7485,7 @@ textarea.form-control.is-invalid {
   .menu > .nav-item .nav-link,
   .menu > .nav-item.mega_menu {
     position: relative;
+    color: #000;
   }
 
   .menu > .nav-item .nav-link:before {
