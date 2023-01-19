@@ -197,9 +197,9 @@ function muffle_is_comment_by_post_author( $comment = null ) {
            
 			$logo_option_url = MUFFLE_IMAGES.'/default_logo/logo_main.svg';
 			$sticky_logo_option = MUFFLE_IMAGES.'/default_logo/logo.svg';
-			$sticky_ratina_sticky_url = MUFFLE_IMAGES.'/default_logo/logo_ratina.png';
+			$sticky_ratina_sticky_url = MUFFLE_IMAGES.'/default_logo/retina_dark_logo.png';
 			$sticky_ratina_attr = '';
-			$ratena_url = MUFFLE_IMAGES.'/default_logo/logo_ratina.png';
+			$ratena_url = MUFFLE_IMAGES.'/default_logo/retina_white_logo.png';
 			
 			$ratena_attr = '';
 			$logo_alt = 'muffle default logo';
@@ -245,13 +245,13 @@ function muffle_is_comment_by_post_author( $comment = null ) {
 
 			//  logo ratina
 			if($ratena_url  != ''){
-				$ratena_attr = 'srcset="'.$logo_option_url.", ".$ratena_url." 2x".'"';
+				$ratena_attr = 'srcset="'.$ratena_url." 2x".'"';
 			}
 
 			// sticky logo ratina 
 
 			if($sticky_ratina_sticky_url  != ''){
-				$sticky_ratina_attr = 'srcset="'.$sticky_logo_option.", ".$sticky_ratina_sticky_url." 2x".'"';
+				$sticky_ratina_attr = 'srcset="'.$sticky_ratina_sticky_url." 2x".'"';
 			}
 
 			if(function_exists('the_custom_logo') && has_custom_logo()) {
