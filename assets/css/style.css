@@ -9602,7 +9602,7 @@ figure.wp-block-gallery {
 .blog-breadcrumbs-area-two.blog-single-page,
 .blog-breadcrumbs-area-two.archive-banner,
 .blog-breadcrumbs-area-two.banner-404 {
-  padding: 160px 0px;
+  padding: 185px 0px 140px;
   position: relative;
   z-index: 1;
 }
