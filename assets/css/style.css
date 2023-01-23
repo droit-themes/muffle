@@ -417,7 +417,6 @@
 
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
-    margin-right: 25px;
   }
 
   .navbar-expand-lg .navbar-toggler {
@@ -6701,10 +6700,21 @@ textarea.form-control.is-invalid {
   padding: 0;
   position: relative;
   text-decoration: none;
+  display: inline-block;
 }
 
-.menu > .nav-item > .nav-link:after {
-  display: none;
+@media (min-width: 992px){
+  .menu.navbar-nav .menu-item.submenu .nav-link:after {
+    font-family: 'dashicons';
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    content: "\f347";
+    top: 3px;
+    position: relative;
+    margin-left: 5px;
+  }
 }
 
 .menu > .nav-item > .nav-link:before {
@@ -6928,7 +6938,7 @@ textarea.form-control.is-invalid {
   right: auto;
 }
 
-.menu > .nav-item:hover .nav-link {
+.menu > .nav-item:hover .nav-link{
   color: #f8b326;
 }
 
@@ -8207,6 +8217,7 @@ blockquote cite br {
   font-weight: 400;
   margin: 5px 3px;
   transition: all 0.2s linear;
+  font-family: "Outfit", Sans-serif;
 }
 
 .tagcloud a:hover,
@@ -8515,8 +8526,10 @@ blockquote cite br {
   font-size: 14px;
   color: #f8b326;
   text-decoration: none;
+  width: auto;
+  height: auto;
   margin-right: 8px;
-  padding: 8px 15px;
+  padding: 0px 15px;
   border: 1px solid currentColor;
 }
 
@@ -8979,8 +8992,13 @@ li.comment.depth-1:not(:first-child) .content h4 {
   font-size: 18px;
   line-height: 29px;
   font-weight: 500;
+  transition: all 0.2s;
 }
-
+.comment-form .btn-comment-form:hover{
+  box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.05);
+  background: #222222;
+  color: #fff;
+}
 .comment-form .logged-in-as {
   margin-top: -20px;
 }
@@ -9785,7 +9803,7 @@ a:visited {
 }
 
 .breadcrumb_content {
-  max-width: 780px;
+  max-width: 880px;
   margin: 0px auto;
 }
 
