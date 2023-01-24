@@ -6705,13 +6705,13 @@ textarea.form-control.is-invalid {
 
 @media (min-width: 992px){
   .menu.navbar-nav .menu-item.submenu .nav-link:after {
-    font-family: 'dashicons';
+    font-family: 'Droit Icons';
     height: 100%;
     display: inline-flex;
     align-items: center;
-    font-size: 16px;
-    content: "\f347";
-    top: 3px;
+    font-size: 7px;
+    content: "\e92a";
+    top: 0px;
     position: relative;
     margin-left: 5px;
   }
@@ -9602,7 +9602,7 @@ figure.wp-block-gallery {
 .blog-breadcrumbs-area-two.blog-single-page,
 .blog-breadcrumbs-area-two.archive-banner,
 .blog-breadcrumbs-area-two.banner-404 {
-  padding: 185px 0px 140px;
+  padding: 160px 0px;
   position: relative;
   z-index: 1;
 }
@@ -9817,7 +9817,12 @@ a:visited {
 }
 
 .banner-with-color {
- background-color: #0F0F0F;
+  background-image: linear-gradient(
+    185deg,
+    #1e1b1c8a 0,
+    #f8b3264a 100%,
+    #f2fac1 94%
+  );
 }
 
 .site-footer {
@@ -9854,6 +9859,14 @@ a:visited {
 }
 .post_text {
   flex: 1;
+}
+@media (max-width: 776px){
+    .admin-bar .site-header{
+        top: 46px;
+    }
+    .admin-bar .navbar_fixed .navbar {
+        margin-top: 46px;
+    }
 }
 
 @media (max-width: 767px) {
