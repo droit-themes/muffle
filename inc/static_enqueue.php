@@ -38,7 +38,6 @@ function muffle_scripts() {
 
 	wp_enqueue_style( 'mufflestylemain', get_theme_file_uri('/assets/css/style.css'), array(), MUFFLE_VERSION );
 	wp_enqueue_style( 'stylemuffle', get_theme_file_uri('/assets/css/style-muffle.css'), array(), MUFFLE_VERSION );
-    wp_enqueue_style( 'muffle_woocommerce', get_theme_file_uri('/assets/css/woocommerce.css'), array(), MUFFLE_VERSION );
 
    //  Enqueue script   
 	wp_enqueue_script( 'mediaelement-and-player', MUFFLE_JS. '/mediaelement-and-player.min.js', array('jquery'), MUFFLE_VERSION, true );
