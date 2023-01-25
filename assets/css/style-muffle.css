@@ -886,3 +886,6 @@ span.post-page-numbers.current {
 ol.wp-block-latest-comments{
   padding-left: 0;
 }
+.muffly_home_service .fung-2 .single-col{
+  border-radius: 8px !important;
+}
