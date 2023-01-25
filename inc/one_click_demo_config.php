@@ -33,7 +33,7 @@ function muffle_after_import_setup() {
     );
 
     // Assign front page and posts page (blog page).
-    $front_page_id = get_page_by_title( 'Home one' );
+    $front_page_id = get_page_by_title( 'Home One' );
     $blog_page_id  = get_page_by_title( 'Blog Page' );
 
     // Disable Elementor's Default Colors and Default Fonts
