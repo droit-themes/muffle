@@ -26,7 +26,7 @@ class muffle_Navwalker extends Walker_Nav_Menu  {
 
          $id = apply_filters( 'nav_menu_item_id', 'menu-item'.$page->ID, $page, $args );
 
-         $id = strlen($id) ? 'id="'.esc_attr($id).'"' : '';
+         $id = strlen($id) ? ' id="'.esc_attr($id).'"' : '';
 
          $output .= $indent. '<li '.$class_names. $id . $value. $li_attributes.'>';
 
@@ -34,12 +34,12 @@ class muffle_Navwalker extends Walker_Nav_Menu  {
 		$attributes .= ! empty( $page->target ) ? ' target="' . esc_attr($page->target) . '"' : '';
 		$attributes .= ! empty( $page->xfn ) ? ' rel="' . esc_attr($page->xfn) . '"' : '';
 		$attributes .= ! empty( $page->url ) ? ' href="' . esc_attr($page->url) . '"' : '';
-        $attributes .= ( $args->walker->has_children ) ? 'data-toggle="dropdown"' : '';
+        $attributes .= ( $args->walker->has_children ) ? ' data-toggle="dropdown"' : '';
         $href_class[] = 'nav-link';
         $href_class[] = ( $args->walker->has_children ) ? 'dropdown-toggle' : '';
        
         $href_class_attr = join(' ', $href_class);
-        $attributes .= 'class="'.esc_attr( $href_class_attr ).'"';
+        $attributes .= ' class="'.esc_attr( $href_class_attr ).'"';
         $has_child_icon = '';
 
         if($depth == 0 && $args->walker->has_children) {
