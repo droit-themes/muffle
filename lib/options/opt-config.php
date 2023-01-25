@@ -27,5 +27,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner_404.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_blog.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_page.php';
-	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_style.php';
+	// require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_style.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_footer.php';
