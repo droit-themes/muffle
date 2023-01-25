@@ -755,6 +755,9 @@ a.comment_link {
 
 .post-thumbnail {
   line-height: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
 }
 
 img.site-logo {
@@ -886,6 +889,6 @@ span.post-page-numbers.current {
 ol.wp-block-latest-comments{
   padding-left: 0;
 }
-.muffly_home_service .fung-2 .single-col{
+.muffly_home_service .fung-2 .single-col,.wp-block-latest-posts__featured-image img{
   border-radius: 8px !important;
 }
