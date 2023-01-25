@@ -261,8 +261,8 @@ function muffle_is_comment_by_post_author( $comment = null ) {
 			}elseif($logo_option_url != '') {
 
               echo '<a href="'.esc_url(home_url('/')).'" class="navbar-brand">
-						<img src="'.esc_url($logo_option_url).'" class="site-logo" alt="'.esc_attr( $logo_alt ).'"'.$ratena_attr.'>
-						<img src="'.esc_url($sticky_logo_option).'" class="site-logo" alt="'.esc_attr( $logo_alt_sticky ).'"'.$sticky_ratina_attr.'>
+						<img src="'.esc_url($logo_option_url).'" class="site-logo" alt="'.esc_attr( $logo_alt ).'" '.$ratena_attr.'>
+						<img src="'.esc_url($sticky_logo_option).'" class="site-logo" alt="'.esc_attr( $logo_alt_sticky ).'" '.$sticky_ratina_attr.'>
 			        </a>';
 
 			}else{
