@@ -7693,6 +7693,11 @@ textarea.form-control.is-invalid {
 .blog_post_item {
   position: relative;
 }
+.blog_post_item.has-post-thumbnail{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
 
 .blog_post_item:not(:last-child) {
   margin-bottom: 40px;
@@ -7765,10 +7770,10 @@ textarea.form-control.is-invalid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
+  text-transform: capitalize;
   color: #899097;
-  text-transform: uppercase;
 }
 
 .media_blog_content .post_bottom .learn_btn_two {

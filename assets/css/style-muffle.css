@@ -779,7 +779,7 @@ img.site-logo {
 }
 
 span.post_date_loop {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 .blog-breadcrumbs-area-two .text-white .post-meta a:hover {
@@ -891,6 +891,15 @@ ol.wp-block-latest-comments{
 }
 .muffly_home_service .fung-2 .single-col,.wp-block-latest-posts__featured-image img{
   border-radius: 8px !important;
+}
+.breadcrumb_content {
+  max-width: 880px;
+}
+.muffly_faqs.muffly_faqs_two .dl_accordion_item .droit-icon{
+  top: -32%;
+}
+.white_border .program_list_page .filters ul {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 }
 
 
@@ -1100,4 +1109,14 @@ padding-top:60px
 }
 .muffly_home_service .fung-2:hover .single-col img{
 	transform: scale(1.03)
+}
+
+.media_blog_content .post-title .post-meta .post_date_loop:after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #899097;
+  border-radius: 50px;
+  display: inline-block;
+  margin-left: 11px;
 }
