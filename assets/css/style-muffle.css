@@ -786,7 +786,11 @@ span.post_date_loop {
   color: #ffffff;
 }
 .page .entry-content {
-  padding: 50px 0 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.page .entry-content.media_blog_content{
+  padding: 20px;
 }
 a.post-page-numbers {
   width: 44px;
