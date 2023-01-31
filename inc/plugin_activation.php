@@ -77,6 +77,18 @@ function muffle_resister_required_plugin() {
 			'required'  => false,
 		),
 
+		array(
+			'name'      => esc_html__( 'WooCommerce', 'muffle' ),
+			'slug'      => 'woocommerce',
+			'required'  => false,
+		),
+
+		array(
+			'name'      => esc_html__( 'Bookly - Online Booking and Scheduling', 'muffle' ),
+			'slug'      => 'bookly-responsive-appointment-booking-tool',
+			'required'  => false,
+		),
+
 	);
 
 	/*

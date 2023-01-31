@@ -74,6 +74,7 @@ if ( ! function_exists( 'muffle_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
+		add_theme_support( 'woocommerce' );
 
 
 		/*
