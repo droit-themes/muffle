@@ -139,6 +139,35 @@ Redux::set_section('muffle', array(
       )
 ));
 
+// Shop Banner 
+
+Redux::set_section('muffle', array(
+    'title'            => esc_html__( 'Shop Banner', 'muffle' ),
+    'desc'            => esc_html__( 'This banner show in shop page , shop single , Shop category', 'muffle' ),
+    'id'               => 'shop_banner',
+    'icon'             => 'el el-cog',
+    'subsection' => true,
+    'fields'           => array(
+    
+        array( 
+        'title'    => esc_html__('Shop Page Title', 'muffle'),
+        'id' => 'muffle_blog_title',
+        'type' => 'text',
+        ),
+        array(
+            'id'       => 'muffle_shop_banner_upload',
+            'type'     => 'media', 
+            'url'      => true,
+            'title'    => __('Upload Banner', 'muffle'),
+            'default'  => array(
+                'url'=> MUFFLE_IMAGES.'/blog/banner/banner.png',
+            ),
+            'url'      => false
+
+        ),
+      )
+));
+
 // Single page blog 
 
 

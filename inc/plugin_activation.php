@@ -47,6 +47,12 @@ function muffle_resister_required_plugin() {
 			'slug'               => 'droit-elementor-addons',
 			'required'           => true,
 		),
+
+		array(
+			'name'               => esc_html__( 'Droit Dark Mode', 'muffle' ),
+			'slug'               => 'droit-dark-mode',
+			'required'           => true,
+		),
 		
 		array(
 			'name'               => esc_html__( 'Muffle Core', 'muffle' ), // The plugin name.
@@ -62,6 +68,12 @@ function muffle_resister_required_plugin() {
 		array(
 			'name'               => esc_html__( 'Redux Framework', 'muffle' ),
 			'slug'               => 'redux-framework',
+			'required'           => true,
+		),
+
+		array(
+			'name'               => esc_html__( 'Contact Form 7', 'muffle' ),
+			'slug'               => 'contact-form-7',
 			'required'           => true,
 		),
 

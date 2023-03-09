@@ -6,12 +6,42 @@ function muffle_import_files() {
     return array(
 
         array(
-            'import_file_name'             => esc_html__('All Demos', 'muffle'),
+            'import_file_name'             => esc_html__('Light Demos', 'muffle'),
             'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents.xml',
             'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
-            'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.png',
+            'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.jpg',
             'import_notice'                => 'All Page Demos',
             'preview_url'                  => 'https://muffle.droitlab.com/',
+            'local_import_redux'           => array(
+                array(
+                    'file_path'   => trailingslashit( get_template_directory() ) . 'inc/demos/settings.json',
+                    'option_name' => 'muffle',
+                ),
+            ),
+        ),
+
+        array(
+            'import_file_name'             => esc_html__('Dark Demos', 'muffle'),
+            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents.xml',
+            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
+            'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.jpg',
+            'import_notice'                => 'All Page Demos',
+            'preview_url'                  => 'https://muffle.droitlab.com/dark/',
+            'local_import_redux'           => array(
+                array(
+                    'file_path'   => trailingslashit( get_template_directory() ) . 'inc/demos/settings.json',
+                    'option_name' => 'muffle',
+                ),
+            ),
+        ),
+
+        array(
+            'import_file_name'             => esc_html__('RTL Demos', 'muffle'),
+            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents.xml',
+            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
+            'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.jpg',
+            'import_notice'                => 'All Page Demos',
+            'preview_url'                  => 'https://muffle.droitlab.com/rtl/',
             'local_import_redux'           => array(
                 array(
                     'file_path'   => trailingslashit( get_template_directory() ) . 'inc/demos/settings.json',
