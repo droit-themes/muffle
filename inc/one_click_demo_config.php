@@ -22,7 +22,7 @@ function muffle_import_files() {
 
         array(
             'import_file_name'             => esc_html__('Dark Demos', 'muffle'),
-            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents.xml',
+            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents_dark.xml',
             'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
             'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot_dark.png',
             'import_notice'                => 'All Page Demos',
@@ -37,7 +37,7 @@ function muffle_import_files() {
 
         array(
             'import_file_name'             => esc_html__('RTL Demos', 'muffle'),
-            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents.xml',
+            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents_rtl.xml',
             'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
             'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot_rtl.png',
             'import_notice'                => 'All Page Demos',
