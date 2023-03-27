@@ -15,3 +15,5 @@ New    : Integration WooCommerce
 
 ----- 1.0.0 (30 January 2023) -----
 Initial release
+
+
