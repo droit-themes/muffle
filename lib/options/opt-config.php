@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     Redux::setArgs( $opt_name, $args );
 
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_header.php';
+    require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_menu.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner_search.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner_404.php';

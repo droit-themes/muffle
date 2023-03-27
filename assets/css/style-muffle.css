@@ -859,11 +859,7 @@ span.post-page-numbers.current {
 .menu > .nav-item:last-child{
   margin-right: 0;
 }
-@media (min-width: 992px){
-  .menu.ms-lg-auto{
-    margin-right: 0 !important;
-  }
-}
+
 @media (max-width: 1280px) {
   .menu > .nav-item {
     margin-left: 16px;

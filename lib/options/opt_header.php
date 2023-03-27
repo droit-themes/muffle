@@ -177,7 +177,7 @@ Redux::set_section( 'muffle', array(
                 'id'        => 'menu_btn_bg_color',
                 'type'      => 'color',
                 'mode'      => 'background',
-                'output'    => array( '.header_area .navbar .btn_get' ),
+                'output'    => array( '.navbar .btn_get' ),
             ),
     
             // Button color on hover stats
@@ -186,14 +186,14 @@ Redux::set_section( 'muffle', array(
                 'subtitle'  => esc_html__( 'Font color on hover stats.', 'muffle' ),
                 'id'        => 'menu_btn_hover_font_color',
                 'type'      => 'color',
-                'output'    => array( '.header_area .navbar .btn_get:hover' ),
+                'output'    => array( '.navbar .btn_get:hover' ),
             ),
             array(
                 'title'     => esc_html__( 'Hover Border Color', 'muffle' ),
                 'id'        => 'menu_btn_hover_border_color',
                 'type'      => 'color',
                 'mode'      => 'border-color',
-                'output'    => array( '.header_area .navbar .btn_get:hover' ),
+                'output'    => array( '.navbar .btn_get:hover' ),
             ),
             array(
                 'title'     => esc_html__( 'Hover background color', 'muffle' ),
@@ -201,8 +201,8 @@ Redux::set_section( 'muffle', array(
                 'id'        => 'menu_btn_hover_bg_color',
                 'type'      => 'color',
                 'output'    => array(
-                    'background' => '.header_area .navbar .btn_get:hover',
-                    'border-color' => '.navbar_fixed .header_area .navbar .btn_get:hover'
+                    'background' => '.navbar .btn_get:hover',
+                    'border-color' => '.navbar_fixed .navbar .btn_get:hover'
                 ),
             ),
             array(
@@ -227,20 +227,20 @@ Redux::set_section( 'muffle', array(
                 'id'        => 'menu_btn_border_color_sticky',
                 'type'      => 'color',
                 'mode'      => 'border-color',
-                'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+                'output'    => array( '.navbar_fixed .navbar .btn_get' ),
             ),
             array(
                 'title'     => esc_html__( 'Font color', 'muffle' ),
                 'id'        => 'menu_btn_font_color_sticky',
                 'type'      => 'color',
-                'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+                'output'    => array( '.navbar_fixed .navbar .btn_get' ),
             ),
             array(
                 'title'     => esc_html__( 'Background color', 'muffle' ),
                 'id'        => 'menu_btn_bg_color_sticky',
                 'type'      => 'color',
                 'mode'      => 'background',
-                'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+                'output'    => array( '.navbar_fixed .navbar .btn_get' ),
             ),
     
             // Button color on hover stats
@@ -249,7 +249,7 @@ Redux::set_section( 'muffle', array(
                 'subtitle'  => esc_html__( 'Font color on hover stats.', 'muffle' ),
                 'id'        => 'menu_btn_hover_font_color_sticky',
                 'type'      => 'color',
-                'output'    => array( '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover' ),
+                'output'    => array( '.navbar_fixed .navbar .btn_get.btn-meta:hover' ),
             ),
             array(
                 'title'     => esc_html__( 'Hover background color', 'muffle' ),
@@ -257,7 +257,7 @@ Redux::set_section( 'muffle', array(
                 'id'        => 'menu_btn_hover_bg_color_sticky',
                 'type'      => 'color',
                 'output'    => array(
-                    'background' => '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover',
+                    'background' => '.navbar_fixed .navbar .btn_get.btn-meta:hover',
                 ),
             ),
             array(
@@ -266,7 +266,7 @@ Redux::set_section( 'muffle', array(
                 'id'        => 'menu_btn_hover_border_color_sticky',
                 'type'      => 'color',
                 'output'    => array(
-                    'border-color' => '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover',
+                    'border-color' => '.navbar_fixed .navbar .btn_get.btn-meta:hover',
                 ),
             ),
     
