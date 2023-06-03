@@ -81,7 +81,7 @@ Redux::set_section( 'muffle', array(
  * Menu Settings
  */
 Redux::set_section( 'muffle', array(
-    'title'            => esc_html__( 'Header Styling', 'muffle' ),
+    'title'            => esc_html__( 'Header Button', 'muffle' ),
     'id'               => 'header_styling_opt',
     'icon'             => '',
     'subsection'       => true,

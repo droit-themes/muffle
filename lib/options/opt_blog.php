@@ -1,17 +1,9 @@
 <?php
-
-Redux::set_section('muffle', array(
-	'title'     => esc_html__( 'Blog', 'muffle' ),
-	'id'        => 'blog_page',
-	'icon'      => 'dashicons dashicons-admin-post',
-));
-
 // Blog Title Bar
 Redux::set_section('muffle', array(
-	'title'     => esc_html__( 'Layout', 'muffle' ),
+	'title'     => esc_html__( 'Blog Layout', 'muffle' ),
 	'id'        => 'blog_titlebar_settings',
-	'icon'      => '',
-    'subsection' => true,
+	'icon'      => 'dashicons dashicons-admin-post',
 	'fields'    => array(
     array(
         'id'       => 'muffle_blog_setting',

@@ -1,19 +1,10 @@
 <?php
 // Header Section
-Redux::set_section( 'muffle', array(
-    'title'            => esc_html__( 'Style', 'muffle' ),
-    'id'               => 'muffle_style_sec',
-    'customizer_width' => '400px',
-    'icon'             => 'el el-brush',
-));
 
-// color 
-
-Redux::set_section( 'muffle', array(
-    'title'            => esc_html__( 'Color', 'muffle' ),
+Redux::setSection( 'muffle', array(
+    'title'            => esc_html__( 'Theme Color', 'muffle' ),
     'id'               => 'muffle_color_opt',
-    'subsection'       => true,
-    'icon'             => 'el el-cogs',
+    'icon'             => 'el el-lines',
     'fields'           => array(
       
         array(

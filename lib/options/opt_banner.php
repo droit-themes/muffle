@@ -2,7 +2,7 @@
 
 Redux::set_section('muffle', array(
     'title'            => esc_html__( 'Banner Setting', 'muffle' ),
-    'id'               => 'headers_typo_opt',
+    'id'               => 'headers_banner_settings_opt',
     'icon'             => 'el el-picture',
 ));
 
@@ -10,7 +10,7 @@ Redux::set_section('muffle', array(
 Redux::set_section('muffle', array(
     'title'            => esc_html__( 'Page Banner', 'muffle' ),
     'id'               => 'Banner',
-    'icon'             => 'el el-cog',
+    'icon'             => '',
     'subsection' => true,
     'fields'           => array(
         array(
@@ -74,7 +74,7 @@ Redux::set_section('muffle', array(
 Redux::set_section('muffle', array(
     'title'            => esc_html__( 'Blog Banner', 'muffle' ),
     'id'               => 'blog_banner',
-    'icon'             => 'el el-cog',
+    'icon'             => '',
     'subsection' => true,
     'fields'           => array(
         array(
@@ -145,7 +145,7 @@ Redux::set_section('muffle', array(
     'title'            => esc_html__( 'Shop Banner', 'muffle' ),
     'desc'            => esc_html__( 'This banner show in shop page , shop single , Shop category', 'muffle' ),
     'id'               => 'shop_banner',
-    'icon'             => 'el el-cog',
+    'icon'             => '',
     'subsection' => true,
     'fields'           => array(
     
@@ -174,7 +174,7 @@ Redux::set_section('muffle', array(
 Redux::set_section('muffle', array(
     'title'            => esc_html__( 'Single Blog Banner', 'muffle' ),
     'id'               => 'single_blog_banner',
-    'icon'             => 'el el-cog',
+    'icon'             => '',
     'subsection' => true,
     'fields'           => array(
         array(
@@ -238,7 +238,7 @@ Redux::set_section('muffle', array(
 Redux::set_section('muffle', array(
     'title'            => esc_html__( 'Archive Banner', 'muffle' ),
     'id'               => 'archive_blog_banner',
-    'icon'             => 'el el-cog',
+    'icon'             => '',
     'subsection' => true,
     'fields'           => array(
         array(

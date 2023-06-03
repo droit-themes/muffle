@@ -20,15 +20,14 @@ if ( ! defined( 'ABSPATH' ) ) {
     );
 
     Redux::setArgs( $opt_name, $args );
-
+    
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_header.php';
     require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_menu.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner_search.php';
-	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner_404.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_blog.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_page.php';
-	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_style.php';
-	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_footer.php';
-    require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_custom_posts.php';
+    require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_404.php';
     require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_typo.php';
+    require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_style.php';
+	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_footer.php';

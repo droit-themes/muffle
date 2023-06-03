@@ -236,3 +236,52 @@ if(!function_exists('muffle_pagination')){
 
 }
 
+
+if(!function_exists('muffle_extention_wp_kses')) {
+ 
+    function muffle_extention_wp_kses ( $data ) {
+ 
+        $allow_html = array(
+            'a' => array(
+                'href' => array(),
+                'title' => array()
+            ),
+            'p' => array(
+                'cite' => array(),
+                'title' => array(),
+            ),
+            'br' => array(),
+            'em' => array(),
+            'strong' => array(),
+            'h1' => array(),
+            'h2' => array(),
+            'h3' => array(),
+            'h4' => array(),
+            'h5' => array(),
+            'h6' => array(),
+            'i' => array(),
+            'strong' => array(),
+            'code' => array(),
+            'li' => array(
+                'class' => array(),
+            ),
+            'ol' => array(
+                'class' => array(),
+            ),
+            'ul' => array(
+                'class' => array(),
+            ),
+            'img' => array(
+                'alt'    => array(),
+                'class'  => array(),
+                'height' => array(),
+                'src'    => array(),
+                'width'  => array(),
+            ),
+            'span'   => array()
+        );
+ 
+      return  wp_kses($data, $allow_html);
+    }
+}
+

@@ -1,17 +1,9 @@
 <?php
-
-Redux::set_section('muffle', array(
-	'title'     => esc_html__( 'Footer', 'muffle' ),
-	'id'        => 'muffle_page',
-	'icon'      => 'dashicons dashicons-admin-post',
-));
-
 // page Title Bar
 Redux::set_section('muffle', array(
-	'title'     => esc_html__( 'Content', 'muffle' ),
+	'title'     => esc_html__( 'Footer', 'muffle' ),
 	'id'        => 'muffle_footer',
-	'icon'      => '',
-    'subsection' => true,
+	'icon'      => 'dashicons dashicons-admin-post',
 	'fields'    => array(
         array(
             'title'     => esc_html__('Copyright Text', 'muffle'),
