@@ -1,4 +1,10 @@
 
+----- 1.0.3 (04 June 2023) -----
+New     : 02 New Home Page Added
+update  : Demo content updated
+update  : Theme option updated
+updated : Compatibility with latest WordPress
+
 ----- 1.0.2 (09 March  2023) -----
 New    : Dark Demo  Integration
 New    : Dark Demo Added
