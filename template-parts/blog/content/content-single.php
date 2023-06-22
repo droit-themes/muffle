@@ -40,6 +40,6 @@ $show_social_share = muffle_options('muffle_display_blog_share', 'no');
     </div>
 </div>
                       
-    <!-- End medical blog list area -->
+    <!-- End blog list area -->
 
  

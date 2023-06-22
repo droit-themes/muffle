@@ -9,6 +9,9 @@
  * @since muffle 1.0
  */
 
+$opt = get_option( 'muffle' );
+$post_title_length = isset($opt['post_title_length']) ? $opt['post_title_length'] : '';
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog_post_item zoom_in_effect'); ?>>
@@ -30,7 +33,9 @@
             muffle_posted_by();
             ?>
             </div>
-            <?php   the_title( sprintf( ' <h2 class="entry-title blog_title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+            <h2 class="entry-title blog_title"><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), $post_title_length); ?></a></h2>
+
+            <!-- <?php  //wp_trim_words( the_title( sprintf( ' <h2 class="entry-title blog_title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ), $post_title_length ); ?> -->
         </div>
 
 

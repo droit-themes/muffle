@@ -108,6 +108,23 @@ Redux::set_section('muffle', array(
             ), 
             'default' => 'show'
         ),
+        //
+        array(
+			'title'     => esc_html__( 'Blog Title', 'muffle' ),
+			'id'        => 'blog_title',
+			'type'      => 'text',
+			'default'   => esc_html__( 'Blog List', 'muffle' ),
+		),
+
+		array(
+			'title'         => esc_html__( 'Title font properties', 'muffle' ),
+			'id'            => 'blog_titlebar_title_typo',
+			'type'          => 'typography',
+			'google'        => true,
+			'text-align'    => true,
+			'output'        => array( '.breadcrumb_content h1' ),
+		),
+        //
         array( 
         'title'    => esc_html__('Blog title', 'muffle'),
         'id' => 'muffle_blog_title',

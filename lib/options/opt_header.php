@@ -132,17 +132,6 @@ Redux::set_section( 'muffle', array(
                 'units'       => 'px',
                 'required'  => array( 'is_menu_btn', '=', 'yes' )
             ),
-            array(
-                'title'     => esc_html__( 'Button Font Size', 'muffle' ),
-                'id'        => 'menu_btn_size',
-                'type'      => 'spinner',
-                'default'   => '14',
-                'min'       => '12',
-                'step'      => 'yes',
-                'max'       => '50',
-                'output'      => array('.btn_get'),
-                'required'  => array( 'is_menu_btn', '=', 'yes' )
-            ),
     
             /**
              * Button colors
@@ -161,7 +150,7 @@ Redux::set_section( 'muffle', array(
                 'title'     => esc_html__( 'Font color', 'muffle' ),
                 'id'        => 'menu_btn_font_color',
                 'type'      => 'color',
-                'output'    => array( '.btn_get' ),
+                'output'    => array( '.nav_bar .btn_get' ),
             ),
             
             array(
@@ -186,7 +175,7 @@ Redux::set_section( 'muffle', array(
                 'subtitle'  => esc_html__( 'Font color on hover stats.', 'muffle' ),
                 'id'        => 'menu_btn_hover_font_color',
                 'type'      => 'color',
-                'output'    => array( '.navbar .btn_get:hover' ),
+                'output'    => array( '.navbar .nav_bar .btn_get:hover' ),
             ),
             array(
                 'title'     => esc_html__( 'Hover Border Color', 'muffle' ),

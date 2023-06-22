@@ -170,3 +170,4 @@ if(!function_exists('muffle_page_meta')){
     }
 
  }
+
