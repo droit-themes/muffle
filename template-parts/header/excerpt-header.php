@@ -15,7 +15,7 @@ if ( 'aside' === $post_format || 'status' === $post_format ) {
 ?>
 <?php if(has_post_thumbnail( )) : ?> 
   <div class="post_media">
-      <?php muffle_post_thumbnail(); ?>
+      <?php  muffle_post_thumbnail(); ?>
   </div>
 <?php endif; ?>
 
