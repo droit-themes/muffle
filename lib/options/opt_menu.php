@@ -130,3 +130,46 @@ Redux::setSection('muffle', array(
     
     )
 ));
+
+
+/*** Headers Typography ***/
+Redux::set_section( 'muffle', array(
+    'title'            => esc_html__( 'Mobile Menu Setting', 'muffle' ),
+    'id'               => 'mobile_menu_opt',
+    'icon'             => '',
+    'subsection'       => true,
+    'fields'           => array(
+        
+        array(
+            'id'            => 'mobile_menu_dropdown_bg',
+            'type'          => 'color',
+            'title'         => esc_html__( 'Background Color', 'muffle' ),
+            'subtitle'      => esc_html__( 'Controls the background color of the mobile menu dropdown and classic mobile menu box.', 'muffle' ),
+            'mode'          => 'background',
+        ),
+        array(
+            'title'         => esc_html__( 'Menu Item Color', 'muffle' ),
+            'id'            => 'mobile_menu_font_color',
+            'type'          => 'color',
+        ),
+        array(
+            'title'         => esc_html__( 'Menu Item Active/Hover Color', 'muffle' ),
+            'id'            => 'mobile_menu_hover_color',
+            'type'          => 'color',
+        ),
+        array(
+            'title'         => esc_html__( 'Dropdown Icon Color', 'muffle' ),
+            'id'            => 'mobile_menu_dropdown_color',
+            'type'          => 'color',
+        ),
+
+        array (
+            'title'     => esc_html__( 'Hamburger Menu Icon Color', 'muffle' ),
+            'id'        => 'hamburger_menu_icon_color',
+            'type'      => 'color',
+        ),
+    
+
+      
+    )
+));

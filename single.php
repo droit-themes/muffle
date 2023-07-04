@@ -35,6 +35,8 @@ $blog_sidebar = muffle_options('muffle_blog_setting');
 				comments_template();
 			endif;
 
+			
+
 		endwhile; // End of the loop.
 		wp_reset_postdata(  );
 		
