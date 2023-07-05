@@ -168,7 +168,7 @@ Redux::set_section('muffle', array(
     
         array( 
         'title'    => esc_html__('Shop Page Title', 'muffle'),
-        'id' => 'muffle_blog_title',
+        'id' => 'muffle_shop_title',
         'type' => 'text',
         ),
         array(

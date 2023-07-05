@@ -9,6 +9,7 @@
   
   $how_title = muffle_options('muffle_blog_banner_title', 'show');
   $title = muffle_options('muffle_blog_title', get_bloginfo('name'));
+  $reduxtitle = muffle_options('blog_title');
   $show_breadcrumbs = muffle_options('muffle_blog_banner_breadcrumb', 'show');
   $banner_background_url = MUFFLE_IMAGES.'/blog/banner/banner.png';
  
@@ -31,7 +32,15 @@
         <div class="container">
             <div class="breadcrumb_content text-white text-center">
                 <?php if($how_title == 'show') : ?>
-                    <h1 class="page_title banne-blog"><?php echo esc_html( $title ); ?></h1>
+                    <h1 class="page_title banne-blog">
+                        <?php
+                            if(!empty($reduxtitle)){
+                                echo esc_html( $reduxtitle );
+                            }else{
+                                echo esc_html( $title );
+                            }
+                        ?>
+                    </h1>
                 <?php endif;
                 if($show_breadcrumbs  == 'show') : 
                     muffle_breadcrumbs();

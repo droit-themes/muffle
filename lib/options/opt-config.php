@@ -31,3 +31,4 @@ if ( ! defined( 'ABSPATH' ) ) {
     require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_typo.php';
     require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_style.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_footer.php';
+    require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_custom_posts.php';
