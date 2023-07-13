@@ -170,7 +170,25 @@ function muffle_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+
+	// Footer Widgets
+    register_sidebar(array(
+        'name'          => esc_html__('Footer widgets', 'muffle'),
+        'description'   => esc_html__('Add widgets here for Footer widgets area', 'kidzo'),
+        'id'            => 'footer_widgets',
+        'before_widget' => '<div id="%1$s" class="footer-widget col-lg-3 col-sm-6 wow fadeInDown %2$s" data-wow-delay=".3s">
+                            <div class="single_footer_widget">',
+        'after_widget'  => '</div></div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>'
+    ));
+
 }
+
+
+
+
 add_action( 'widgets_init', 'muffle_widgets_init' );
 
 /**

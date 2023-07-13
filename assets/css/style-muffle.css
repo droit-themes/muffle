@@ -1195,3 +1195,17 @@ padding-top:60px
   .error_section h2 {
     font-size: 38px;
   }
+}
+
+  .footer-widget ul li{
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.footer-widget ul li:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
