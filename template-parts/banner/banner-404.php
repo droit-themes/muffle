@@ -19,7 +19,7 @@ if(!class_exists('Redux')){
   }
 ?>
 <?php if($banner_background_url != '') :  ?>
-    <div class="blog-breadcrumbs-area-two parallaxie" data-bg-img="<?php echo esc_url($banner_background_url); ?>">
+    <div class="blog-breadcrumbs-area-two parallaxie errorpage" data-bg-img="<?php echo esc_url($banner_background_url); ?>">
     <div class="overlay_bg"></div>
 <?php else: ?>
 <div class="blog-breadcrumbs-area-two banner-with-color">
@@ -29,7 +29,7 @@ if(!class_exists('Redux')){
             <?php if($show_banner == 'show') :  ?>    
                 <h1 class="page-title page_title"><?php echo  esc_html($banner_title); ?></h1>
                 <?php 
-             endif;   
+             endif;
                   if($show_breadcrumbs == 'show') {    
                     muffle_breadcrumbs(); 
                     } ?>

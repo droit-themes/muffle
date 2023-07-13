@@ -20,7 +20,7 @@ $blog_sidebar = muffle_options('muffle_blog_setting');
 
 	<main id="primary" class="site-main">
 
-	<?php get_template_part('template-parts/banner/banner', 'blog'); 
+	<?php  get_template_part('template-parts/banner/banner', 'blog'); 
 
 	muffle_wrapper_start($blog_sidebar);
 

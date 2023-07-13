@@ -90,6 +90,17 @@ Redux::set_section( 'muffle', array(
     'subsection'       => true,
     'fields'           => array(
         array(
+            'id'       => 'muffle_display_blog_single_tags',
+            'type'     => 'button_set',
+            'title'    => esc_html__('Display Post Tags', 'muffle'),
+            'options' => array(
+                'yes' => 'Yes', 
+                'no' => 'No', 
+             ), 
+            'default' => 'no'
+        ),
+        
+        array(
             'id'       => 'muffle_display_blog_share',
             'type'     => 'button_set',
             'title'    => esc_html__('Display Social Share?', 'muffle'),
@@ -100,7 +111,46 @@ Redux::set_section( 'muffle', array(
             'default' => 'no'
         ),
 
-  
+        array( 
+            'id' => 'muffle_social_title_text',
+            'title'    => __('Shared Title', 'muffle'), 
+            'type' => 'text',
+            'default' => 'Shared'
+        ),
+
+        array(
+            'id'       => 'is_social_share_links',
+            'type'     => 'checkbox',
+            'title'    => __('Checked Share Links', 'muffle'),
+            'options'  => array(
+                'facebook' => __('Facebook', 'muffle'),
+                'twitter'  => __('Twitter', 'muffle'),
+                'pinterest'=> __('Pinterest', 'muffle'),
+                'linkedin' => __('Linkedin', 'muffle')
+            ),
+            'default' => array(
+                'facebook'  => '1', 
+                'twitter'   => '1', 
+                'pinterest' => '0',
+                'linkedin' => '1'
+            ),
+        ),
+
+        array(
+            'id'       => 'muffle_display_blog_comments',
+            'type'     => 'button_set',
+            'title'    => esc_html__('Display Comments Section', 'muffle'),
+            'options' => array(
+                'yes' => 'Yes', 
+                'no' => 'No', 
+             ), 
+            'default' => 'yes'
+        ),
+
     )
 ));
+
+
+
+
 

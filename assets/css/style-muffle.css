@@ -1209,3 +1209,32 @@ padding-top:60px
     margin-top: 0;
     padding-top: 0;
 }
+
+.blog_single_info .share {
+  display: flex;
+  align-items: center;
+  margin-top: 05px;
+}
+
+.blog_single_info .share .social_icon {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.blog_single_info .share .social_icon li a {
+  color: #131313;
+  background: #fff;
+  border: 2px solid #efefef;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.blog_single_info .share  .social_icon li {
+  margin-left: 9px;
+}
