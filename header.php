@@ -35,6 +35,9 @@
         }else{
     ?>
     <header id="masthead" class="site-header sticky_nav">
-        <?php get_template_part( 'template-parts/header/nav/content',  'nav'); ?>
+        <?php  get_template_part( 'template-parts/header/nav/content',  'nav'); 
+        ?>
+
+        
 	</header><!-- #masthead -->
 <?php } ?>

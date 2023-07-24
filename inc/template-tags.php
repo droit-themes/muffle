@@ -8,7 +8,7 @@
  */
 $opt = get_option( 'muffle' );
 $is_post_author = isset($opt['is_post_author']) ? $opt['is_post_author'] : '1';
-$is_post_date = isset($opt['is_post_date']) ? $opt['is_post_date'] : '1';
+
 
 if ( ! function_exists( 'muffle_posted_on' ) ) :
 	/**
@@ -17,6 +17,9 @@ if ( ! function_exists( 'muffle_posted_on' ) ) :
 	
 
 	function muffle_posted_on() {
+		$opt = get_option( 'muffle' );
+		$is_post_date = isset($opt['is_post_date']) ? $opt['is_post_date'] : '1';
+
 		if ( $is_post_date == '1' ) :
 	?>
 	  <span class="post_date_loop"><i class="fas fa-calendar-alt"></i><?php echo esc_html( get_the_date(get_option('date_format')) ); ?> </span> 
