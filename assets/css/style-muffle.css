@@ -992,12 +992,6 @@ padding-top:60px
     border: 1px solid rgba(15, 15, 15, 0);
     border-radius: 0px 0px 6px 6px;
 }
-.blog_muffly .dl_blog_grid_masonory_post.style_8 {
-    box-shadow: 0 12px 10px #f1f1f100;
-}
-.blog_muffly .dl_blog_grid_masonory_post.style_8:hover {
-    box-shadow: 0px 20px 110px rgba(15, 15, 15, 0.1);
-}
 .blog_muffly .dl_post_author.droit-post_author{
 	position:relative;
 	margin-right: 30px;
@@ -1093,9 +1087,6 @@ padding-top:60px
 .book_schedule .book_sc_items._book {
     display: flex;
     gap: 20px;
-}
-.book_schedule .book_sc_item {
-    width: 100%;
 }
 .book_schedule input.wpcf7-form-control.has-spinner.wpcf7-submit.book_send {
     width: 100%;
@@ -1197,3 +1188,68 @@ padding-top:60px
   .error_section h2 {
     font-size: 38px;
   }
+}
+
+/* custom css */
+
+.btn_get{
+	color:#FFFFFF !important;
+}
+.bookly-form select {
+    padding: 10px 10px 10px !important;
+}
+
+.droit-post__area.style_5 .droit-post__thumbnail{
+	height:350px;
+	border-radius:0px;
+}
+/* widget blog */
+.blog_muffly .dl_blog_grid_masonory_post.style_8 {
+    box-shadow: 0 12px 10px #f1f1f100;
+}
+.blog_muffly .dl_blog_grid_masonory_post.style_8:hover {
+    box-shadow: 0px 20px 110px rgba(15, 15, 15, 0.1);
+}
+/* blog end*/
+
+/* new css */
+.book_schedule .book_sc_item {
+    width: 100%;
+}
+.book_titles {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #0F0F0F;
+    margin-bottom: 22px;
+}
+.blog_muffly .has-post-thumbnail{
+	overflow: visible;
+}
+.bookFrom3 .book_titles {
+    text-align: center;
+}
+.service_two {
+    overflow: hidden;
+}
+.drdt_sticky_fixed .sticky_menu_style .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-title, .drdt_sticky_fixed .sticky_menu_style .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-description {
+  color: rgba(15, 15, 15, 1);
+}
+.drdt_sticky_fixed .sticky_menu_style .elementor-icon-box-wrapper .elementor-icon-box-icon svg path {
+	fill: rgba(15, 15, 15, 1);
+}
+.drdt_sticky_fixed .sticky_btn_style .ub-btn .elementor-button-text{
+	color: #0F0F0F;
+}
+.drdt_sticky_fixed .sticky_btn_style .elementor-button{
+	border-color: #0F0F0F !important;
+}
+
+.drdt-nav-menu .elementor-clickable .dlicon-cross {
+    color: #0F0F0F !important;
+}
+.dark_project .program_list_page .filters ul {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
