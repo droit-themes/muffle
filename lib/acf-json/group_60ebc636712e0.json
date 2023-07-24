@@ -6,6 +6,7 @@
             "key": "field_60ebc6c0d604f",
             "label": "Icon Images",
             "name": "service_icon_images",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -44,5 +45,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1626064811
+    "show_in_rest": 0,
+    "modified": 1689233295
 }
