@@ -1,3 +1,9 @@
+----- 1.0.4 (30 July 2023) -----
+New     : 05 New Home Page Added
+update  : Demo content updated
+update  : Theme option updated
+updated : Compatibility with latest WordPress
+
 
 ----- 1.0.3 (04 June 2023) -----
 New     : 02 New Home Page Added
