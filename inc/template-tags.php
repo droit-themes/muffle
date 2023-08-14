@@ -6,9 +6,6 @@
  *
  * @package muffle
  */
-$opt = get_option( 'muffle' );
-$is_post_author = isset($opt['is_post_author']) ? $opt['is_post_author'] : '1';
-
 
 if ( ! function_exists( 'muffle_posted_on' ) ) :
 	/**
@@ -34,6 +31,7 @@ if ( ! function_exists( 'muffle_posted_by' ) ) :
 	 */
 	function muffle_posted_by() {
 		global $post;
+
 		$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( '%s', 'post author', 'muffle' ),

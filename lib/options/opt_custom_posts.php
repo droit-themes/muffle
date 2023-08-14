@@ -56,49 +56,49 @@ Redux::set_section( 'muffle', array(
 /**
  * Slug Re-write
  */
-Redux::set_section( 'muffle', array(
-    'title'     => esc_html__( 'Post Type Slugs', 'saasland' ),
-    'id'        => 'saasland_cp_slugs',
-    'icon'      => '',
-    'subsection'=> true,
-    'fields'    => array(
-        array(
-            'id'        => 'cp_slug_note',
-            'type'      => 'info',
-            'style'     => 'warning',
-            'title'     => esc_html__( 'Slug Re-write:', 'saasland' ),
-            'icon'      => 'dashicons dashicons-info',
-            'desc'      => sprintf (
-                '%1$s <a href="%2$s"> %3$s</a> %4$s',
-                esc_html__( "These are the custom post's slugs offered by Saasland. You can customize the permalink structure (site_domain/post_type_slug/post_slug) by changing the post type slug (post_type_slug) from here. Don't forget to save the permalinks settings from", 'saasland' ),
-                get_admin_url( null, 'options-permalink.php' ),
-                esc_html__( 'Settings > Permalinks', 'saasland' ),
-                esc_html__( 'after changing the slug value.', 'saasland' )
-            )
-        ),
+// Redux::set_section( 'muffle', array(
+//     'title'     => esc_html__( 'Post Type Slugs', 'saasland' ),
+//     'id'        => 'saasland_cp_slugs',
+//     'icon'      => '',
+//     'subsection'=> true,
+//     'fields'    => array(
+//         array(
+//             'id'        => 'cp_slug_note',
+//             'type'      => 'info',
+//             'style'     => 'warning',
+//             'title'     => esc_html__( 'Slug Re-write:', 'saasland' ),
+//             'icon'      => 'dashicons dashicons-info',
+//             'desc'      => sprintf (
+//                 '%1$s <a href="%2$s"> %3$s</a> %4$s',
+//                 esc_html__( "These are the custom post's slugs offered by Saasland. You can customize the permalink structure (site_domain/post_type_slug/post_slug) by changing the post type slug (post_type_slug) from here. Don't forget to save the permalinks settings from", 'saasland' ),
+//                 get_admin_url( null, 'options-permalink.php' ),
+//                 esc_html__( 'Settings > Permalinks', 'saasland' ),
+//                 esc_html__( 'after changing the slug value.', 'saasland' )
+//             )
+//         ),
         
-        array(
-            'title'     => esc_html__( 'Service Slug', 'saasland' ),
-            'id'        => 'service_slug',
-            'type'      => 'text',
-            'required'  => array( 'is_service_cpt', '=', '1' ),
-            'default'   => 'service'
-        ),
+//         array(
+//             'title'     => esc_html__( 'Service Slug', 'saasland' ),
+//             'id'        => 'service_slug',
+//             'type'      => 'text',
+//             'required'  => array( 'is_service_cpt', '=', '1' ),
+//             'default'   => 'service'
+//         ),
         
-        array(
-            'title'     => esc_html__( 'Project Slug', 'saasland' ),
-            'id'        => 'project_slug',
-            'type'      => 'text',
-            'required'  => array( 'is_project_cpt', '=', '1' ),
-            'default'   => 'project'
-        ),
+//         array(
+//             'title'     => esc_html__( 'Project Slug', 'saasland' ),
+//             'id'        => 'project_slug',
+//             'type'      => 'text',
+//             'required'  => array( 'is_project_cpt', '=', '1' ),
+//             'default'   => 'project'
+//         ),
         
-        array(
-            'title'     => esc_html__( 'Team Slug', 'saasland' ),
-            'id'        => 'team_slug',
-            'type'      => 'text',
-            'required'  => array( 'is_team_cpt', '=', '1' ),
-            'default'   => 'team'
-        ),
-    )
-));
+//         array(
+//             'title'     => esc_html__( 'Team Slug', 'saasland' ),
+//             'id'        => 'team_slug',
+//             'type'      => 'text',
+//             'required'  => array( 'is_team_cpt', '=', '1' ),
+//             'default'   => 'team'
+//         ),
+//     )
+// ));

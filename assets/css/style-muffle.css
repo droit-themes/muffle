@@ -1116,7 +1116,7 @@ padding-top:60px
 
 
 .error_section {
-  background-color: #f8b326;
+  background-color: #9d26f8fa;
   overflow: hidden;
   height: 100vh;
   color: #ffffff;
@@ -1252,4 +1252,18 @@ padding-top:60px
 }
 .dark_project .program_list_page .filters ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.post_bottom .share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post_bottom .share ul.social_icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.post_bottom .share ul.social_icon li {
+  margin: 0;
 }

@@ -43,23 +43,23 @@ $show_social_title = muffle_options('muffle_social_title_text', 'Shared');
                     <?php
                         if( '1' == $opt['is_social_share_links']['facebook'] ){
                     ?>
-                      <li> <a href="https://facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li> <a href="https://facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i></a></li>
                       
                     <?php } ?>
 
                     <?php
                     if( '1' == $opt['is_social_share_links']['twitter'] ){ ?>
-                      <li> <a href="https://twitter.com/intent/tweet?text=<?php the_permalink(); ?>"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li> <a href="https://twitter.com/intent/tweet?text=<?php the_permalink(); ?>"><i class="fab fa-twitter"></i></a></li>
                     <?php } ?>
 
                     <?php 
                     if( '1' == $opt['is_social_share_links']['pinterest'] ){ ?>
-                      <li> <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>"><i class="fa-brands fa-pinterest"></i></a></li> 
+                      <li> <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>"><i class="fab fa-pinterest-p"></i></a></li> 
                     <?php } ?> 
 
                     <?php 
                     if( '1' == $opt['is_social_share_links']['linkedin'] ){ ?>
-                        <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>"><i class="fab fa-linkedin-in"></i></a></li>
                     <?php } ?>
 
                     </ul>
