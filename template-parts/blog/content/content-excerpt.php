@@ -11,6 +11,7 @@
 
 $opt = get_option( 'muffle' );
 $post_title_length = isset($opt['post_title_length']) ? $opt['post_title_length'] : '';
+$is_post_author = isset($opt['is_post_author']) ? $opt['is_post_author'] : '1';
 
 ?>
 
@@ -28,14 +29,14 @@ $post_title_length = isset($opt['post_title_length']) ? $opt['post_title_length'
         ?>
         <div class="post-title entry-title">
             <div class="post-meta">
-            <?php 
-            muffle_posted_on();
-            muffle_posted_by();
+            <?php
+            muffle_posted_on(); 
+            if($is_post_author  == '1'):
+                muffle_posted_by();
+            endif;
             ?>
             </div>
             <h2 class="entry-title blog_title"><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), $post_title_length); ?></a></h2>
-
-            <!-- <?php  //wp_trim_words( the_title( sprintf( ' <h2 class="entry-title blog_title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ), $post_title_length ); ?> -->
         </div>
 
 

@@ -175,7 +175,7 @@ function muffle_widgets_init() {
 	// Footer Widgets
     register_sidebar(array(
         'name'          => esc_html__('Footer widgets', 'muffle'),
-        'description'   => esc_html__('Add widgets here for Footer widgets area', 'kidzo'),
+        'description'   => esc_html__('Add widgets here for Footer widgets area', 'muffle'),
         'id'            => 'footer_widgets',
         'before_widget' => '<div id="%1$s" class="footer-widget col-lg-3 col-sm-6 wow fadeInDown %2$s" data-wow-delay=".3s">
                             <div class="single_footer_widget">',

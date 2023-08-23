@@ -35,7 +35,7 @@ Redux::set_section('muffle', array(
     ///
     array(
         'title'     => esc_html__( 'Post title length', 'muffle' ),
-        'subtitle'  => esc_html__( 'Blog post title length in character', 'muffle' ),
+        'subtitle'  => esc_html__( 'Blog post title length in Description', 'muffle' ),
         'id'        => 'post_title_length',
         'type'      => 'slider',
         'default'   => 1,
