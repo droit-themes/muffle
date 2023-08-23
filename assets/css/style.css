@@ -9738,10 +9738,6 @@ h2 a:hover {
   color: #f8b326;
 }
 
-a:visited {
-  color: #1e1e1e;
-}
-
 .list-unstyled {
   list-style: none;
   margin: 0;

@@ -1154,7 +1154,6 @@ padding-top:60px
   outline: none;
   color: #f8b326;
   background-color: #ffffff;
-  border: 2px solid #f8b326;
   line-height: 1;
   font-size: 16px;
   overflow: hidden;
@@ -1172,7 +1171,6 @@ padding-top:60px
 .error_btn:hover {
   color: #ffffff;
   background-color: #f8b326;
-  border: 2px solid #ffffff;
 }
 
 @media (max-width: 991px) {
