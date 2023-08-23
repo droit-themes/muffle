@@ -1104,7 +1104,7 @@ padding-top:60px
 	transform: scale(1.03)
 }
 
-.media_blog_content .post-title .post-meta .post_date_loop:after{
+/* .media_blog_content .post-title .post-meta .post_date_loop:after{
   content: "";
   width: 6px;
   height: 6px;
@@ -1112,7 +1112,7 @@ padding-top:60px
   border-radius: 50px;
   display: inline-block;
   margin-left: 11px;
-}
+} */
 
 
 .error_section {
@@ -1192,9 +1192,6 @@ padding-top:60px
 
 /* custom css */
 
-.btn_get{
-	color:#FFFFFF !important;
-}
 .bookly-form select {
     padding: 10px 10px 10px !important;
 }

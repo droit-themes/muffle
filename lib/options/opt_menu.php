@@ -34,8 +34,18 @@ Redux::setSection('muffle', array(
             ),
             'type'      => 'color',
         ),
-        
 
+
+        array(
+            'title'     => esc_html__('Menu Active/Hover Bar Color', 'muffle'),
+            'subtitle'  => esc_html__('Menu item Active/Hover Bar Color mode', 'muffle'),
+            'id'        => 'menu_hover_active_bar_color',
+            'output'    => array(
+                'background'     => '.menu > .nav-item > .nav-link:before',
+            ),
+            'type'      => 'color',
+        ),
+        
         // Sticky menu settings section
         array(
             'id' => 'sticky_menu_start',
@@ -123,6 +133,16 @@ Redux::setSection('muffle', array(
             'id'        => 'sub_menu_active_font_color',
             'output'    => array(
                 'color' => '.menu > .nav-item.submenu .dropdown-menu .nav-item.active > .nav-link',
+            ),
+            'type'      => 'color',
+        ),
+
+        array(
+            'title'     => esc_html__('Hover Menu Color', 'muffle'),
+            'subtitle'  => esc_html__('Menu item font color on sticky Active menu mode.', 'muffle'),
+            'id'        => 'sub_menu_hover_font_color',
+            'output'    => array(
+                'color' => '.menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link',
             ),
             'type'      => 'color',
         ),

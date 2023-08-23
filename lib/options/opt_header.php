@@ -61,7 +61,7 @@ Redux::set_section( 'muffle', array(
             'id'        => 'logo_dimensions',
             'type'      => 'dimensions',
             'units'     => array( 'em','px','%' ),
-            'output'    => '.logo_info .navbar-brand img'
+            'output'    => 'img.site-logo'
         ),
 
         array(
@@ -69,7 +69,7 @@ Redux::set_section( 'muffle', array(
             'subtitle'  => esc_html__( 'Padding around the logo. Input the padding as clockwise (Top Right Bottom Left)', 'muffle' ),
             'id'        => 'logo_padding',
             'type'      => 'spacing',
-            'output'    => array( '.logo_info .navbar-brand img' ),
+            'output'    => array( 'img.site-logo' ),
             'mode'      => 'padding',
             'units'     => array( 'em', 'px', '%' ),      // You can specify a unit value. Possible: px, em, %
             'units_extended' => 'true',
@@ -89,7 +89,7 @@ Redux::set_section( 'muffle', array(
             array(
                 'id'       => 'is_menu_btn',
                 'type'     => 'button_set',
-                'title'    => esc_html__('Show Search Button', 'muffle'),
+                'title'    => esc_html__('Show Button', 'muffle'),
                 'options' => array(
                     'yes' => esc_html__('Yes', 'muffle'), 
                     'no' => esc_html__('No', 'muffle'), 
