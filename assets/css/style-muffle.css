@@ -1262,3 +1262,13 @@ padding-top:60px
 .post_bottom .share ul.social_icon li {
   margin: 0;
 }
+
+/* contact form */
+.contact_name p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.contact_form p{
+  margin: 0;
+}

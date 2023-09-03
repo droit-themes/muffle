@@ -26,12 +26,14 @@ Redux::set_section('muffle', array(
         ),
         'default' => 'right'
     ),
+    
     array( 
         'id' => 'muffle_read_more_text_button',
         'title'    => __('Read More Button Text', 'muffle'), 
         'type' => 'text',
         'default' => 'Read More'
     ),
+
     ///
     array(
         'title'     => esc_html__( 'Post title length', 'muffle' ),
