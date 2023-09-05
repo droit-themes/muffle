@@ -8,6 +8,26 @@ Redux::set_section( 'muffle', array(
 ));
 
 
+Redux::set_section( 'muffle', array(
+    'title'            => esc_html__( 'Header Settings', 'muffle' ),
+    'id'               => 'muffle_header_opt',
+    'subsection'       => true,
+    'icon'             => '',
+    'fields'           => array(
+
+        array(
+            'id'       => 'is_sticky',
+            'type'     => 'button_set',
+            'title'    => esc_html__('Show Sticky', 'muffle'),
+            'options' => array(
+                'yes' => esc_html__('Yes', 'muffle'), 
+                'no' => esc_html__('No', 'muffle'), 
+             ), 
+            'default' => 'no'
+        ),
+    )
+) );
+
 // Logo
 Redux::set_section( 'muffle', array(
     'title'            => esc_html__( 'Logo', 'muffle' ),
