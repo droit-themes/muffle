@@ -8,9 +8,11 @@
  *
  * @package muffle
  */
+$opt = get_option('muffle_options');
 $footer_url = muffle_options('muffle_footer_background');
 $is_defult_footer = muffle_options('is_defult_footer');
-$footer_background_url = MUFFLE_IMAGES.'/blog/banner/banner.png';
+
+
 
 if($footer_url && !empty($footer_url['url'])) {
     $footer_background_url = $footer_url['url'];
@@ -27,7 +29,9 @@ if ( isset( $post->ID) && function_exists('header_footer_template_id')) {
     $footer_id = header_footer_template_id('footer', $post->ID);
 }
 
-if ( $footer_id != '' && class_exists( '\Elementor\Plugin' ) ) {
+
+
+if ( $footer_id != '' && class_exists( '\Elementor\Plugin' ) && $is_defult_footer !== 'yes' ) {
     echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $footer_id );
 }else{ ?>
     <?php if($is_defult_footer == 'yes') : ?>

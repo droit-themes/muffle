@@ -51,7 +51,9 @@ require MUFFLE_THEMEROOT_DIR . '/inc/breadcrumbs.php';
 /**
  * muffle Tgm
  */
-require MUFFLE_THEMEROOT_DIR . '/inc/plugin_activation.php';
+require MUFFLE_THEMEROOT_DIR . '/inc/tgm/tgm-plugin-registration.php';
+require MUFFLE_THEMEROOT_DIR . '/inc/tgm/tgm-plugin-activation.php';
+require MUFFLE_THEMEROOT_DIR . '/inc/tgm/class-plugins.php';
 
 
 /**
