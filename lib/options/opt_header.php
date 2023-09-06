@@ -23,7 +23,7 @@ Redux::set_section( 'muffle', array(
                 'yes' => esc_html__('Yes', 'muffle'), 
                 'no' => esc_html__('No', 'muffle'), 
              ), 
-            'default' => 'no'
+            'default' => 'yes'
         ),
     )
 ) );
