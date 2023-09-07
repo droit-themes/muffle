@@ -1,5 +1,9 @@
+<?php 
+$muffle_header_layout = muffle_options('muffle_header_layout', 'container'); 
+?>
+
 <nav class="navbar navbar-expand-lg menu_one">
-    <div class="container">
+    <div class="<?php if($muffle_header_layout == 'container'){echo "container";}else{echo "container-fluid";} ?>">
         <?php muffle_logo(); ?>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <?php 

@@ -25,6 +25,24 @@ Redux::set_section( 'muffle', array(
              ), 
             'default' => 'yes'
         ),
+
+        array(
+            'id'       => 'muffle_header_layout',
+            'type'     => 'image_select',
+            'title'    => __('Header Layout', 'muffle'), 
+            'subtitle' => __('Select your header layout', 'muffle'),
+            'options'  => array(
+                'container'      => array(
+                    'alt'   => 'Container', 
+                    'img'   => ReduxFramework::$_url.'assets/img/3cm.png'
+                ),
+                'container-fluid'      => array(
+                    'alt'   => 'Container-Fluid', 
+                    'img'   => ReduxFramework::$_url.'assets/img/1col.png'
+                ),
+            ),
+            'default' => 'container'
+        ),
     )
 ) );
 
