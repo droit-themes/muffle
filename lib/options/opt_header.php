@@ -43,6 +43,57 @@ Redux::set_section( 'muffle', array(
             ),
             'default' => 'container'
         ),
+
+        array(
+            'id'       => 'is_header_bg_color',
+            'type'     => 'button_set',
+            'title'    => esc_html__('Show Background', 'muffle'),
+            'options' => array(
+                'yes' => esc_html__('Yes', 'muffle'), 
+                'no' => esc_html__('No', 'muffle'), 
+             ), 
+            'default' => 'yes'
+        ),
+
+        array(
+            'title'     => esc_html__( 'Background Color Normal', 'muffle' ),
+            'id'        => 'menu_bg_color',
+            'type'      => 'color',
+            'mode'      => 'background',
+            'output'    => array( '.site-header .navbar' ),
+            'required'  => array( 'is_header_bg_color', '=', 'yes' )
+        ),
+
+        array(
+            'title'     => esc_html__( 'Background Color Sticky', 'muffle' ),
+            'id'        => 'menu_bg_color_sticky',
+            'type'      => 'color',
+            'mode'      => 'background',
+            'output'    => array( '.site-header.sticky_nav.navbar_fixed .navbar' ),
+        ),
+
+        array(
+            'title'     => esc_html__( 'Header Padding Normal', 'muffle' ),
+            'subtitle'  => esc_html__( 'Padding around the header. Input the padding as clockwise (Top Right Bottom Left)', 'muffle' ),
+            'id'        => 'header_padding',
+            'type'      => 'spacing',
+            'output'    => array( '.site-header .navbar' ),
+            'mode'      => 'padding',
+            'units'     => array( 'em', 'px', '%' ),      // You can specify a unit value. Possible: px, em, %
+            'units_extended' => 'true',
+        ),
+
+        array(
+            'title'     => esc_html__( 'Header Padding Sticky', 'muffle' ),
+            'subtitle'  => esc_html__( 'Padding around the header. Input the padding as clockwise (Top Right Bottom Left)', 'muffle' ),
+            'id'        => 'header_padding_sticky',
+            'type'      => 'spacing',
+            'output'    => array( '.navbar_fixed .navbar .menu > .nav-item' ),
+            'mode'      => 'padding',
+            'units'     => array( 'em', 'px', '%' ),      // You can specify a unit value. Possible: px, em, %
+            'units_extended' => 'true',
+        ),
+
     )
 ) );
 

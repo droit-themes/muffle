@@ -109,6 +109,15 @@ function muffle_scripts() {
             }";
     }
 
+    if ( !empty($opt['hamburger_menu_icon_color_sticky']) ) {
+        $dynamic_css .= "
+            @media (max-width: 991px) {
+                .navbar_fixed .navbar-toggler span{
+                    background: {$opt['hamburger_menu_icon_color_sticky']} !important;
+                }
+            }";
+    }
+
 
     wp_add_inline_style( 'muffle-style', $dynamic_css );
 } 
