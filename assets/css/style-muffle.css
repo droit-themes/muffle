@@ -1455,3 +1455,11 @@ ol.wp-block-latest-comments {
 .summary .product_meta span a {
   padding: 5px 10px;
 }
+
+.blog_grid{
+  margin-bottom: 25px;
+}
+
+.blog_grid .blog_grid_masonory.style_5 .blog_grid_masonory_content{
+  padding-left: 0px !important;
+}

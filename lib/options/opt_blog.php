@@ -26,6 +26,15 @@ Redux::set_section('muffle', array(
         ),
         'default' => 'right'
     ),
+
+    array(
+        'title'     => esc_html__( 'Blog Format', 'muffle' ),
+        'id'        => 'defult_blog_format',
+        'type'      => 'switch',
+        'on'        => esc_html__( 'Grid Style', 'muffle' ),
+        'off'       => esc_html__( 'List Style', 'muffle' ),
+        'default'   => 'off',
+    ),
     
     array( 
         'id' => 'muffle_read_more_text_button',
@@ -40,8 +49,8 @@ Redux::set_section('muffle', array(
         'subtitle'  => esc_html__( 'Blog post title length in Description', 'muffle' ),
         'id'        => 'post_title_length',
         'type'      => 'slider',
-        'default'   => 1,
-        "min"       => 1,
+        'default'   => 10,
+        "min"       => 10,
         "step"      => 1,
         "max"       => 500,
         'display_value' => 'text',
