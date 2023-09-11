@@ -11,6 +11,6 @@
 
 $opt = get_option( 'muffle' );
 $blog_excerpt = isset($opt['blog_excerpt']) ? $opt['blog_excerpt'] : '';
+?>
+  <div class='blog_excerpt'> <?php echo wp_trim_words(get_the_content(), $blog_excerpt);?> </div>
 
-
-echo wp_trim_words(get_the_excerpt(), $blog_excerpt);
