@@ -6701,6 +6701,7 @@ textarea.form-control.is-invalid {
   position: relative;
   text-decoration: none;
   display: inline-block;
+  font-weight: 500;
 }
 
 @media (min-width: 992px){
@@ -6779,6 +6780,7 @@ textarea.form-control.is-invalid {
   font-size: 16px;
   color: #0f0f0f;
   transition: color 0.2s linear;
+  font-weight: 500;
 }
 
 .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link:after {
