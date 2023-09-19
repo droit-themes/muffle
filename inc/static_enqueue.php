@@ -25,6 +25,18 @@ function muffle_fonts_url() {
     return $fonts_url;
 }
 
+/**
+ * Enqueueing Stylesheets
+ */
+	$opt = get_option('muffle');
+    $font_load = 1;
+    if ( class_exists('Redux') ) {
+        $font_load = !empty( $opt['is_default_font'] ) ? 1 : '';
+    }
+    if ( $font_load == 1 ) {
+        wp_enqueue_style( 'mufflefonts' );
+    }
+
 
 function muffle_scripts() {
     wp_enqueue_style('mufflefonts', muffle_fonts_url(), array(), null); 
