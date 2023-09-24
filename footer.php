@@ -35,7 +35,7 @@ if ( $footer_id != '' && class_exists( '\Elementor\Plugin' ) && $is_defult_foote
     echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $footer_id );
 }else{ ?>
     <?php if($is_defult_footer == 'yes') : ?>
-        <footer id="colophon" class="site-footer" data-bg-img="<?php echo esc_url($footer_background_url); ?>">
+        <footer id="colophon" class="site-footer" <?php if(!empty($footer_background_url)): ?> data-bg-img="<?php echo esc_url($footer_background_url); ?>" <?php endif; ?>>
             <?php 
                 if (is_active_sidebar('footer_widgets')):
             ?>
