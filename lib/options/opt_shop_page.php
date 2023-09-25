@@ -18,7 +18,7 @@ Redux::setSection('muffle', array(
             'type'      => 'color',
             'title'     => 'Shop Title Color',
             'mode'      => 'color',
-            'output'    => array( '.shop_page_title, h1.page-title.page_title' ),
+            'output'    => array( 'h1.shop_page-title.shop_page_title' ),
         ),
 
         array(
