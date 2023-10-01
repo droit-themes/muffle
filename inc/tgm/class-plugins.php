@@ -39,7 +39,7 @@ class muffle_Register_Plugins {
 			array(
 				'name'               => esc_html__( 'Muffle Core', 'muffle' ), // The plugin name.
 				'slug'               => 'muffle-core', // The plugin slug (typically the folder name).
-				'source'             => 'http://muffle.droitlab.com/downloadfile/muffle-core_1.0.2.zip', // The plugin source.
+				'source'             => 'http://muffle.droitlab.com/downloadfile/muffle-core_1.0.3.zip', // The plugin source.
 				'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 				'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 				'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.

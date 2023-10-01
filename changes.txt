@@ -2,6 +2,7 @@
 update  : Demo content updated
 update  : Theme option updated
 update  : TGM Plugin active function updated
+update  : Muffle-core plugin updated  ( 1.0.3 )
 updated : Compatibility with latest WordPress
 
 
