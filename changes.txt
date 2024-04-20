@@ -1,4 +1,8 @@
------ 1.0.4 (30 July 2023) -----
+----- 1.0.6 (20 April 2024) -----
+update  : Plugin install issue solved
+updated : Compatibility with latest WordPress
+
+----- 1.0.5 (1 Out 2023) -----
 update  : Demo content updated
 update  : Theme option updated
 update  : TGM Plugin active function updated
