@@ -99,7 +99,7 @@ Redux::set_section( 'muffle', array(
 
 // Logo
 Redux::set_section( 'muffle', array(
-    'title'            => esc_html__( 'Logo', 'muffle' ),
+    'title'            => esc_html__( 'Logo Option', 'muffle' ),
     'id'               => 'muffle_logo_opt',
     'subsection'       => true,
     'icon'             => '',

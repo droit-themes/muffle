@@ -36,6 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_banner_search.php';
 	require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_blog.php';
+    require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_shop_page.php';
     require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_404.php';
     require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_typo.php';
     require MUFFLE_THEMEROOT_DIR . '/lib/options/opt_style.php';

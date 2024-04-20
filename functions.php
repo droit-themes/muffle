@@ -87,7 +87,7 @@ if ( ! function_exists( 'muffle_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary', 'muffle' ),
+				'primary' => esc_html__( 'Main Menu', 'muffle' ),
 			)
 		);
 
@@ -185,8 +185,6 @@ function muffle_widgets_init() {
     ));
 
 }
-
-
 
 
 add_action( 'widgets_init', 'muffle_widgets_init' );
