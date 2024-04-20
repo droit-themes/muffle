@@ -23,18 +23,6 @@ class muffle_Register_Plugins {
 				'slug'      => 'elementor',
 				'required'  => true,
 			),
-	
-			array(
-				'name'               => esc_html__( 'Droit Addons For Elementor', 'muffle' ),
-				'slug'               => 'droit-elementor-addons',
-				'required'           => true,
-			),
-	
-			array(
-				'name'               => esc_html__( 'Droit Dark Mode', 'muffle' ),
-				'slug'               => 'droit-dark-mode',
-				'required'           => true,
-			),
 			
 			array(
 				'name'               => esc_html__( 'Muffle Core', 'muffle' ), // The plugin name.
@@ -45,6 +33,30 @@ class muffle_Register_Plugins {
 				'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 				'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 				'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+			),
+
+			array(
+				'name'               => esc_html__( 'Droit Addons For Elementor', 'muffle' ), // The plugin name.
+				'slug'               => 'droit-elementor-addons', // The plugin slug (typically the folder name).
+				'source'             => 'https://saasland.droitlab.com/downloadfile/droit-elementor-addons_3.1.5.zip', // The plugin source.
+				'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+				'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+				'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+				'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+				'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+				'version'            => ''
+			),
+
+			array(
+				'name'               => esc_html__( 'Droit Dark', 'muffle' ), // The plugin name.
+				'slug'               => 'droit-dark-mode', // The plugin slug (typically the folder name).
+				'source'             => 'https://dlcarspa.droitlab.com/wp-content/plugins/droit-dark-mode.zip', // The plugin source.
+				'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+				'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+				'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+				'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+				'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+				'version'            => ''
 			),
 	
 			array(
