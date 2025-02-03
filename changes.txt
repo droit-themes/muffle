@@ -1,3 +1,7 @@
+----- 1.0.8 (3 Feb 2025) -----
+update  : Muffle-core plugin updated  ( 1.0.5 )
+updated : Compatibility with latest WordPress
+
 ----- 1.0.7 (14 Oct 2024) -----
 update  : Muffle-core plugin updated  ( 1.0.4 )
 updated : Compatibility with latest WordPress
