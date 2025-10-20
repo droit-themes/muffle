@@ -1,3 +1,12 @@
+----- 1.1.0 (03 Jun 2025) -----
+update  : Demo content updated
+updated : Deprecated function updated
+updated : Compatibility with latest WordPress
+
+----- 1.0.9 (03 Jun 2025) -----
+updated : Deprecated function updated
+updated : Compatibility with latest WordPress
+
 ----- 1.0.8 (3 Feb 2025) -----
 update  : Muffle-core plugin updated  ( 1.0.5 )
 updated : Compatibility with latest WordPress
